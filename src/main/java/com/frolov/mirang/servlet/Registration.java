@@ -1,8 +1,5 @@
 package com.frolov.mirang.servlet;
 
-import com.frolov.mirang.factory.PlatformFactory;
-import com.frolov.mirang.factory.UserFactory;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,15 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Servlet", urlPatterns = "/servlet")
-public class Servlet extends HttpServlet {
+@WebServlet(name = "Registration", urlPatterns = "/registration")
+public class Registration extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("platform", PlatformFactory.create());
-        request.setAttribute("user", UserFactory.create());
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+
     }
 }

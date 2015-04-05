@@ -2,6 +2,7 @@ package com.frolov.mirang.entity;
 
 public class Wish {
     private User author;
+    private String title;
     private String intent;
     private int cost;
     private String city;
@@ -13,6 +14,14 @@ public class Wish {
 
     public void setAuthor(User author) {
         this.author = author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getIntent() {

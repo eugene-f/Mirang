@@ -9,6 +9,7 @@ public class WishFactory {
     public static Wish create() {
         Wish wish = new Wish();
         wish.setAuthor(UserFactory.create());
+        wish.setTitle(Lorem.getTitle(3, 7));
         wish.setIntent(Lorem.getParagraphs(1, 1));
         wish.setCost(Util.RANDOM.nextInt(100));
         wish.setCity(Lorem.getStateFull());

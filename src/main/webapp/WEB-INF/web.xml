@@ -9,4 +9,12 @@
         <!--<servlet-name>Servlet</servlet-name>-->
         <!--<servlet-class>com.frolov.mirang.servlet.Servlet</servlet-class>-->
     <!--</servlet>-->
+    <!--<servlet>-->
+        <!--<servlet-name>Registration</servlet-name>-->
+        <!--<servlet-class>com.frolov.mirang.servlet.Registration</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet>-->
+        <!--<servlet-name>Login</servlet-name>-->
+        <!--<servlet-class>com.frolov.mirang.servlet.Login</servlet-class>-->
+    <!--</servlet>-->
 </web-app>
