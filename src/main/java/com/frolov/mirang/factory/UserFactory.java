@@ -2,7 +2,10 @@ package com.frolov.mirang.factory;
 
 import com.frolov.mirang.Util;
 import com.frolov.mirang.entity.User;
+import com.frolov.mirang.entity.Wish;
 import com.thedeanda.lorem.Lorem;
+
+import java.util.ArrayList;
 
 public class UserFactory {
 
@@ -12,8 +15,8 @@ public class UserFactory {
         user.setLastName(Lorem.getLastName());
         user.setAge(20 + Util.RANDOM.nextInt(10 + 1));
         user.setCity(Lorem.getStateFull());
-//        user.setCreated();
-//        user.setPerformed();
+        user.setCreated(new ArrayList<Wish>());
+        user.setPerformed(new ArrayList<Wish>());
         user.setCoins(Util.RANDOM.nextInt(100));
         return user;
     }

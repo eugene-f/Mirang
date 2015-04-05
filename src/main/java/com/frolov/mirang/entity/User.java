@@ -10,7 +10,7 @@ public class User {
     private List<Wish> created;
     private List<Wish> performed;
     private int coins;
-
+    
     public String getFirstName() {
         return firstName;
     }
