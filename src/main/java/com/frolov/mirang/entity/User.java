@@ -1,8 +1,9 @@
 package com.frolov.mirang.entity;
 
 import java.util.List;
+import java.util.UUID;
 
-public class User {
+public class User extends BaseEntity {
     private String firstName;
     private String lastName;
     private int age;
@@ -10,7 +11,11 @@ public class User {
     private List<Wish> created;
     private List<Wish> performed;
     private int coins;
-    
+
+    public User() {
+        uuid = UUID.randomUUID();
+    }
+
     public String getFirstName() {
         return firstName;
     }

@@ -3,10 +3,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Reg - Mirang</title>
+    <title>Registration - Mirang</title>
 </head>
 <body>
-    <h1>Reg</h1>
+    <h1>Registration</h1>
 
     <form>
         <input type="text" placeholder="First Name" value=""><br>

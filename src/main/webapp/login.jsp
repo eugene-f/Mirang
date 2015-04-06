@@ -3,17 +3,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Log - Mirang</title>
+    <title>Login - Mirang</title>
 </head>
 <body>
-    <h1>Log</h1>
+    <h1>Login</h1>
+    <form name="loginForm" method="post" action="/login">
+        <input type="email" placeholder="E-mail" name="email" value=""><br>
+        <input type="password" placeholder="Password" name="password" value=""><br>
 
-    <form>
-        <input type="email" placeholder="E-mail" value=""><br>
-        <input type="password" placeholder="Password" value=""><br>
-
-        <input type="button" value="Login">
+        <input type="submit" value="Login">
     </form>
-
 </body>
 </html>

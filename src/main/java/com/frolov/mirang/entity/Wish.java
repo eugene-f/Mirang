@@ -1,12 +1,18 @@
 package com.frolov.mirang.entity;
 
-public class Wish {
+import java.util.UUID;
+
+public class Wish extends BaseEntity {
     private User author;
     private String title;
     private String intent;
     private int cost;
     private String city;
     private User performer;
+
+    public Wish() {
+        uuid = UUID.randomUUID();
+    }
 
     public User getAuthor() {
         return author;
