@@ -8,14 +8,16 @@
 <body>
     <h1>Registration</h1>
 
-    <form>
-        <input type="text" placeholder="First Name" value=""><br>
-        <input type="text" placeholder="Last Name" value=""><br>
-        <input type="email" placeholder="E-mail" value=""><br>
-        <input type="password" placeholder="Password" value=""><br>
-        <input type="password" placeholder="Confirm Password" value=""><br>
+    <form name="registrationForm" method="post" action="/registration">
+        <input type="text" placeholder="First Name" name="firstName"><br>
+        <input type="text" placeholder="Last Name" name="lastName"><br>
+        <input type="email" placeholder="E-mail" name="email"><br>
+        <input type="text" placeholder="City" name="city"><br>
+        <input type="number" placeholder="Age" name="age"><br>
+        <input type="password" placeholder="Password" name="password"><br>
+        <input type="password" placeholder="Confirm Password" name="passwordConfirm"><br>
 
-        <input type="submit" value="Regiser">
+        <input type="submit" value="Registration">
     </form>
 
 </body>

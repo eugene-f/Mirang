@@ -13,6 +13,7 @@ public class UserFactory {
         User user = new User();
         user.setFirstName(Lorem.getFirstName());
         user.setLastName(Lorem.getLastName());
+        user.setEmail(user.getFirstName() + user.getLastName() + "@gmail.com");
         user.setAge(20 + Util.RANDOM.nextInt(10 + 1));
         user.setCity(Lorem.getStateFull());
         user.setCreated(new ArrayList<Wish>());

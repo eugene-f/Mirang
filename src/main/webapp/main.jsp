@@ -6,23 +6,54 @@
     <title>Mirang</title>
     <style>
         @import "http://webfonts.ru/import/nautilus.css";
+        * {
+            font-family: 'Nautilus Pompilius';
+        }
         body {
             margin: 0;
             padding: 0;
             background-color: darkorange;
         }
-        div#title {
+        *::selection {
+            background: orangered;
+            color: yellow;
+        }
+        div {
             margin-top: 25%;
             width: 100%;
             color: white;
-            font-size: 750%;
-            font-family: 'Nautilus Pompilius';
             text-align: center;
-            /*border: black 1px solid;*/
+        }
+        p {
+            font-size: 750%;
+            text-shadow: 1px 1px 3px black, 0 0 150px white;
+        }
+        a {
+            padding: 5px;
+            font-size: 100%;
+            text-decoration: none;
+        }
+        a:link {
+            color: darkred;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            background-color: white;
+            color: darkred;
+            border-radius: 3px;
+        }
+        a:active {
+            background-color: white;
+            color: red;
         }
     </style>
 </head>
 <body>
-        <div id="title">Mirang</div>
+    <div>
+        <p>Mirang</p>
+        <a href="/login">Login</a><b> // </b><a href="/registration">Registration</a><br>
+    </div>
 </body>
 </html>
